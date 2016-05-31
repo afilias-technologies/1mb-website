@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>1mb website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!--
+        -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/pure-min.css">
+        <link rel="stylesheet" href="css/grids-responsive-min.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="pure-g">
+            <div id="logoPanel" class="pure-u-1-1 pure-u-md-1-2" style="background-color: #f7f7f7; background-image: url('img/background_image.jpg');">
+                <img src="img/1mb_logo.svg" id="logo"/>
+            </div>
+            <div class="pure-u-1-1 pure-u-md-1-2" style="background-color: #f7f7f7;">
+            </div>
+
+            <div class="pure-u-1-1 pure-u-md-1-2" style="padding: 2em; box-sizing: border-box;">
+                <h1 class="title" style="color: #bc2233">One Megabyte Website</h1>
+                <p>
+                    <strong>
+                        The web development community was missing a page size reference. 
+                        This site is that reference&mdash;the 
+                        <a href="http://www.bipm.org/en/bipm/mass/ipk/">International Prototype of the Kilogram</a>, 
+                        but for web.
+                    </strong>
+                </p>
+
+                <p>The <em>transfer size</em> of this website is precisely 1 MB or 1,048,576 bytes (1024<sup>2</sup> or 2<sup>20</sup> 
+                bytes, <a href="https://en.wikipedia.org/wiki/Megabyte">by definition</a>).
+                Transfer size means the amount of data that must be transferred over the network to the browser in order to display the page fully. </p>
+
+                <p>The exact resources that constitute a web page are not mandatory; clients are not obliged to fetch all of them.
+                In this case the 1 MB transfer size is reached if the browser
+                downloads all linked images, JavaScript, CSS and the site's favicon, as the vast majority of browsers do. The 1 MB transfer
+                size includes the size of the response headers from the web server in its totals, since these are part of the cost of fetching a page.</p>
+
+                <p>If your web test tool reports anything other than exactly 1 MB as the size of this page it is either incorrect or is measuring
+                something different. There are some valid reasons for a difference of opinion:</p>
+
+                <ul>
+                    <li><p>Some tools don't include the response headers in their page size totals. This will affect the total measured size, but not by much since each response
+                    header is only about 300 bytes in size, a tiny percentage (0.03%) of the total transfer weight.</p></li>
+                    <li><p>Tools may leave out page resources e.g. JavaScript or the site's favicon (this is arguably incorrect since it is not how
+                    most browsers behave).</p></li>
+                    <li><p>Some entity between your browser and this website is interfering with the content en route.</p></li>
+                </ul>
+
+                <p>There are two less justifiable reasons why page weight measurement tools make mistakes:</p>
+                <ul>
+                    <li><p>Some tools report the uncompressed size of fetched assets. This is a less useful metric since the cost to a user of fetching an asset
+                    (in both time and data plan impact) is a factor of the transfer size of the resource, not the uncompressed size.</p> </li>
+                    <li><p>Simple under-counting and over-counting.</p></li>
+                </ul>
+
+            </div>
+
+            <div class="pure-u-1-1 pure-u-md-1-2" style="background-color: #f7f7f7; ">
+            </div>
+
+            <div class="pure-u-1-1 pure-u-md-1-2" style="">
+                <div class="pure-u-1-1 pure-u-md-1-2 pure-u-sm-5-5" style="float: left;">
+                    <a href="https://www.flickr.com/photos/quasimondo/99347901/in/photolist-9MbER-97c5Hm-aN9dov-ceznQu-978YSZ-dFfnfM-9LBudB-mjKo6J-9cdSB3-ppQyTR-8vXEdm-mjEXKM-ncG4sz-hrkcXq-dfwcyN-psVwS6-8zNewg-9Sg3JX-99cDDx-6qomhS-8kvpxn-97917t-pbHaeL-9791vF-ncGorN-8vVo6i-8tDEUn-dd5Jgi-nnBB92-mjE1Nz-aAwWUA-9Sfc49-mjGXhZ-aN9dxK-bBa4XN-praNxJ-3AVm87-bZN1o5-bc33EB-8WjWy2-mjGWUW-f5WYgJ-97c79d-9ND4FA-8jYvHF-9Tq1Ft-9MbDm-9xMiXC-aDhXph-5dGW5x">
+                        <img class="pure-img" src="img/1kg_weight.jpg" alt="1KG" title="A 1KG weight from Flickr user Mario Klingemann"/>
+                    </a>
+                </div>
+                <div class="pure-u-1-1 pure-u-md-1-2 pure-u-sm-5-5" style="float: left;">
+                    <a href="https://en.wikipedia.org/wiki/File:Balance_scale_IMGP9755.jpg">
+                        <img class="pure-img" src="img/balance_scale.jpg" alt="balance scale" title="A balance scale"/>
+                    </a>
+                </div>
+                <div class="pure-u-1-1 pure-u-md-1-2 pure-u-sm-5-5" style="float: left">
+                    <a href="https://en.wikipedia.org/wiki/File:Prototype_kilogram_replica.JPG">
+                        <img class="pure-img" src="img/prototype_kilogram.jpg" alt="prototype kilogram" title="A copy of the prototype kilogram"/>
+                    </a>
+                </div>
+                <div class="pure-u-1-1 pure-u-md-1-2 pure-u-sm-5-5" style="float: left">
+                    <a href="https://en.wikipedia.org/wiki/File:Gewichtendoos_B.jpg">
+                        <img class="pure-img" src="img/reference_weights.jpg" alt="reference weights" title="Reference weights"/>
+                    </a>
+                </div>
+                <div class="pure-u-1-1 pure-u-md-1-2 pure-u-sm-5-5" style="float: left">
+                    <a href="https://en.wikipedia.org/wiki/File:Silicon_sphere_for_Avogadro_project.jpg">
+                        <img class="pure-img" src="img/silicon_sphere_for_Avogadro_project.jpg" alt="silicon sphere for Avogadro project" title="Silicon sphere for Avogadrp project"/>
+                    </a>
+                </div>
+                <div class="pure-u-1-1 pure-u-md-1-2 pure-u-sm-5-5" style="float: left">
+                    <a href="https://en.wikipedia.org/wiki/File:Weighing_of_the_heart3.jpg">
+                        <img class="pure-img" src="img/weighing_of_the_heart.jpg" alt="the weighing of the heart" title="The weighing of the heart"/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pure-u-1-1 pure-u-md-1-2" style="background-color: #f7f7f7; ">
+            </div>
+
+            <div class="pure-u-1-1 pure-u-md-1-2" style="color: #777; padding: 2em; box-sizing: border-box;">
+                <h2>Colophon</h2>
+                <p>The page is served using HTTP 1.1. As is normally the case, HTML, JavaScript and CSS resources are gziped before transfer, JPEG images are not.</p>
+                <p>This page uses a fairly typical mix of HTML, CSS, images and JavaScript. There are no deliberately tricky elements designed to confuse test
+                tools. No responsive image markup is utilised to ensure that the page weight is invariant, regardless of browser and device. User agent request 
+                headers are not included in the 1 MB total because this component of the whole is controlled by the browser rather than the server. </p>
+                <p>No AJAX requests are utilised to keep things simple.</p>
+                <p>Images are Creative Commons licensed, sourced from <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a> and <a href="http://flckr.com">Flickr</a>.</p>
+                <p>The static source for this site <a href="https://github.com/ronancremin/1mbwebsite">is on GitHub</a>.</p>
+            </div>
+        </div>
+
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

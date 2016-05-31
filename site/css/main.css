@@ -1,0 +1,55 @@
+body {
+    font-family: arial, sans-serif;
+    color: #373737;
+}
+
+
+a {
+    color: #373737;
+}
+
+ul {
+  list-style-type: round;
+}
+
+ul > li {
+  color: #cc2233;
+}
+
+ul > li > p {
+  color: #373737;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+
+@media screen and (min-width: 48em) {
+    #logoPanel {
+        position: fixed;
+    }
+    #logo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    #logoPanel {
+        position: static;
+    }
+    #logo {
+        width: 75%;
+    }
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logoPanel {
+    background-size: cover;
+}
+

@@ -1,0 +1,13 @@
+http://localhost:8000/
+http://localhost:8000/css/pure-min.css
+http://localhost:8000/css/grids-responsive-min.css
+http://localhost:8000/js/vendor/modernizr-2.8.3.min.js
+http://localhost:8000/css/main.css
+http://localhost:8000/js/plugins.js
+http://localhost:8000/js/jquery-1.12.0.min.js
+http://localhost:8000/js/main.js
+http://localhost:8000/img/bike1.jpg
+http://localhost:8000/img/truck1.jpg
+http://localhost:8000/img/truck2.jpg
+http://localhost:8000/img/truck3.jpg
+http://localhost:8000/img/1mb_logo.svg
