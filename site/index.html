@@ -36,9 +36,9 @@
 
                 <p>The <em>transfer size</em> of this website is precisely 1 MB or 1,048,576 bytes (1024<sup>2</sup> or 2<sup>20</sup> 
                 bytes, <a href="https://en.wikipedia.org/wiki/Megabyte">by definition</a>).
-                Transfer size means the amount of data that must be transferred over the network to the browser in order to display the page fully. </p>
+                Transfer size is the amount of data that must be transferred over the network to the browser in order to display the page fully. </p>
 
-                <p>The exact resources that constitute a web page are not mandatory; clients are not obliged to fetch all of them.
+                <p>The exact resources that constitute a web page are not fixed; clients are not obliged to fetch all of them.
                 In this case the 1 MB transfer size is reached if the browser
                 downloads all linked images, JavaScript, CSS and the site's favicon, as the vast majority of browsers do. The 1 MB transfer
                 size includes the size of the response headers from the web server in its totals, since these are part of the cost of fetching a page.</p>
@@ -52,6 +52,8 @@
                     <li><p>Tools may leave out page resources e.g. JavaScript or the site's favicon (this is arguably incorrect since it is not how
                     most browsers behave).</p></li>
                     <li><p>Some entity between your browser and this website is interfering with the content en route.</p></li>
+                    <li><p>Some tools include the HTTP request headers in their totals, causing them to over-count. This is difficult to justify because almost all of the request headers are sent
+                        at the discretion of the client rather than the server.</p></li>
                 </ul>
 
                 <p>There are two less justifiable reasons why page weight measurement tools make mistakes:</p>
@@ -104,13 +106,15 @@
 
             <div class="pure-u-1-1 pure-u-md-1-2" style="color: #777; padding: 2em; box-sizing: border-box;">
                 <h2>Colophon</h2>
+                <p>The 1 MB Website is a <a href="http://mobiforge.com">mobiForge</a> project created as part of a
+                three-part series on web page weight: <a href="https://mobiforge.com/research-analysis/understanding-web-page-weight">Understanding page weight</a>, 
+                <a href="https://mobiforge.com/design-development/measuring-page-weight">Measuring page weight</a>, <a href="https://mobiforge.com/design-development/reducing-page-weight">Reducing page weight</a>.
                 <p>The page is served using HTTP 1.1. As is normally the case, HTML, JavaScript and CSS resources are gziped before transfer, JPEG images are not.</p>
                 <p>This page uses a fairly typical mix of HTML, CSS, images and JavaScript. There are no deliberately tricky elements designed to confuse test
                 tools. No responsive image markup is utilised to ensure that the page weight is invariant, regardless of browser and device. User agent request 
-                headers are not included in the 1 MB total because this component of the whole is controlled by the browser rather than the server. </p>
-                <p>No AJAX requests are utilised to keep things simple.</p>
-                <p>Images are Creative Commons licensed, sourced from <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a> and <a href="http://flckr.com">Flickr</a>.</p>
-                <p>The static source for this site <a href="https://github.com/ronancremin/1mbwebsite">is on GitHub</a>.</p>
+                headers are not included in the 1 MB total because this component of the whole is controlled by the browser rather than the server. No AJAX requests are utilised to keep things simple.</p>
+                <p>Images are Creative Commons licensed, sourced from <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a> and <a href="http://flickr.com">Flickr</a>.</p>
+                <p>The static source for this site is available <a href="https://github.com/afilias-technologies/1mb-website">on GitHub</a>.</p>
             </div>
         </div>
 
