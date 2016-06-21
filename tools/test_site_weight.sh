@@ -18,8 +18,8 @@ cat site_manifest_live.txt \
         printf "\nTotal page transfer weight including headers: "
         printf("%d bytes, ", sum)
         printf("%.0f KB, ", sum/1024)
-        printf("%.2f MB ", sum/1048576)
-        printf("\nDesired size is: %d bytes", 1024 * 1024)
-        printf("\nShortfall is:    %d bytes\n", 1024 * 1024 - sum)
+        printf("%.2f MB ", sum/1000000)
+        printf("\nDesired size is: %d bytes", 1000000)
+        printf("\nShortfall is:    %d bytes\n", 1000000 - sum)
     }
 '

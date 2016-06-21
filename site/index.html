@@ -34,14 +34,19 @@
                     </strong>
                 </p>
 
-                <p>The <em>transfer size</em> of this website is precisely 1 MB or 1,048,576 bytes (1024<sup>2</sup> or 2<sup>20</sup> 
-                bytes, <a href="https://en.wikipedia.org/wiki/Megabyte">by definition</a>).
+                <p>The <em>transfer size</em> of this website is precisely 1 MB or 1,000,000 bytes, 
+                <a href="https://en.wikipedia.org/wiki/Megabyte">by definition</a>.
                 Transfer size is the amount of data that must be transferred over the network to the browser in order to display the page fully. </p>
 
-                <p>The exact resources that constitute a web page are not fixed; clients are not obliged to fetch all of them.
+                <p>The exact resources that constitute a web page are not fixed since clients are not obliged to fetch all of them.
                 In this case the 1 MB transfer size is reached if the browser
-                downloads all linked images, JavaScript, CSS and the site's favicon, as the vast majority of browsers do. The 1 MB transfer
-                size includes the size of the response headers from the web server in its totals, since these are part of the cost of fetching a page.</p>
+                downloads all linked images, JavaScript, CSS, as the vast majority of browsers do. The 1 MB transfer
+                size includes the size of the response headers from the web server in its totals, as these are part of the cost of fetching a page.</p>
+
+                <p><strong>Note:</strong> Previous versions of this page used the base-2 version of the megabyte (2<sup>20</sup> or 1,048,576 bytes), 
+                more correctly called the mebibyte (MiB).
+                The 2<sup>20</sup> version of the megabyte was common and is still the standard that Windows uses but is falling out of usage in favour of
+                the SI unit. The Wikipedia <a href="https://en.wikipedia.org/wiki/Mebibyte">mebibyte article</a> details how different operating systems use megabyte vs. mebibyte.  </p>
 
                 <p>If your web test tool reports anything other than exactly 1 MB as the size of this page it is either incorrect or is measuring
                 something different. There are some valid reasons for a difference of opinion:</p>
